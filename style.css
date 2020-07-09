@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  border: none;
+  outline: none;
+}
+
+:root {
+  --calc-back-color: white;
+  --text-color: rgb(121, 121, 121);
+  --btn-back-color: rgba(224, 224, 224, 0.705);
+  --display-back-color: rgb(253, 253, 253);
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("images/type.png");
+  height: 100vh;
+}
+
+.brand-name {
+  text-align: center;
+  color: var(--text-color);
+  font-weight: 100;
+  margin: 0.6rem;
+}
+
+.calculator {
+  text-align: center;
+  width: fit-content;
+  margin: auto;
+  background-color: var(--calc-back-color);
+  padding: 0.61rem;
+  border-radius: 4px;
+  border: 1px solid rgb(211, 210, 210);
+  background-image: url("images/cubes.png");
+  border-radius: 8px;
+  border-left: none;
+  z-index: 1;
+}
+
+.display {
+  border: 1px solid whitesmoke;
+  width: 100%;
+  height: 3.39rem;
+  margin-bottom: 0.61rem;
+  background-color: var(--display-back-color);
+  color: black;
+  cursor: text;
+  padding-right: 0.6rem;
+  text-align: right;
+}
+
+.btn-grid {
+  width: fit-content;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 0.3rem;
+}
+
+.btn {
+  min-width: 3rem;
+  height: 3rem;
+  padding: 5px;
+  background-color: var(--btn-back-color);
+  color: var(--text-color);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#plus-btn {
+  height: unset;
+  grid-column: 4 / span 1;
+  grid-row: 2 / span 2;
+}
+
+#enter-btn {
+  height: unset;
+  grid-column: 4 / span 1;
+  grid-row: 4 / span 2;
+}
+
+#zero-btn {
+  width: unset;
+  grid-column: 1 / span 2;
+  grid-row: 5 / span 1;
+}
+
+/* Drawer */
+
+.main {
+  display: flex;
+  align-items: center;
+  transform: translateX(-4.2625rem);
+}
+
+.drawer {
+  display: flex;
+  align-items: center;
+  transform: translateX(7.8rem);
+  transition: transform 200ms ease-in;
+}
+
+.displaying-drawer {
+  transform: translateX(0);
+}
+
+.btn-drawer {
+  background-color: white;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  cursor: pointer;
+}
+
+.drawer-display {
+  min-height: fit-content;
+  width: 7.8rem;
+
+  background-color: white;
+  background-image: url("images/cubes.png");
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+  padding: 5px;
+}
+
+.drawer-display .btn {
+  margin: 3px;
+  padding: 10px;
+}
