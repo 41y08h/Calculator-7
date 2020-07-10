@@ -42,7 +42,7 @@ function blink(element) {
 
   setTimeout(function () {
     element.style.filter = initialFilter;
-  }, 100);
+  }, 50);
 }
 
 // Function that evaluates the expression
