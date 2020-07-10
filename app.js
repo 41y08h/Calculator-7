@@ -88,36 +88,9 @@ document.addEventListener("keydown", function (e) {
     if (key === "c" || key === "C") clr();
     else if (key === "Enter") solve();
     else if (key === "Backspace") backspace();
-    else if (key === "ArrowDown") displayDrawer();
-    else if (key === "ArrowUp") hideDrawer();
     else displayValue(key);
   }
 });
-
-// Toggling the drawer
-function hideDrawer() {
-  var drawer = document.querySelector(".drawer");
-
-  if (!drawer.classList.contains("undisplaying-drawer")) {
-    drawer.classList.add("undisplaying-drawer");
-  }
-}
-
-function toggleDrawer() {
-  var drawer = document.querySelector(".drawer");
-
-  if (!drawer.classList.contains("undisplaying-drawer")) {
-    drawer.classList.add("undisplaying-drawer");
-  } else {
-    drawer.classList.remove("undisplaying-drawer");
-  }
-}
-
-function displayDrawer() {
-  var drawer = document.querySelector(".drawer");
-
-  drawer.classList.remove("undisplaying-drawer");
-}
 
 // Eraser
 function backspace() {
@@ -126,8 +99,6 @@ function backspace() {
     0,
     displayValue.length - 1
   );
-
-  blink(document.querySelector(".btn[value='Backspace'"));
 }
 
 if ("serviceWorker" in navigator) {
