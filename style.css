@@ -107,11 +107,10 @@ body {
   bottom: -10px;
   left: 50%;
   transform: translateX(-50%);
-  z-index: -1;
 }
 
 .displaying-drawer {
-  transform: translateY(7.8rem);
+  transform: translate(-50%, 7.3625rem);
 }
 
 .btn-drawer {

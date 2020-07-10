@@ -21,8 +21,8 @@ var validKeys = [
   "(",
   ")",
   "Backspace",
-  "ArrowLeft",
-  "ArrowRight",
+  "ArrowUp",
+  "ArrowDown",
 ];
 
 // Function that displays the value
@@ -88,8 +88,8 @@ document.addEventListener("keydown", function (e) {
     if (key === "c" || key === "C") clr();
     else if (key === "Enter") solve();
     else if (key === "Backspace") backspace();
-    else if (key === "ArrowLeft") displayDrawer();
-    else if (key === "ArrowRight") hideDrawer();
+    else if (key === "ArrowDown") displayDrawer();
+    else if (key === "ArrowUp") hideDrawer();
     else displayValue(key);
   }
 });
