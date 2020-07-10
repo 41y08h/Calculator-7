@@ -17,7 +17,7 @@
 
 body {
   display: flex;
-  padding-top: 5rem;
+  align-items: center;
   justify-content: center;
   background-image: url("images/type.png");
   height: 100vh;
@@ -36,11 +36,11 @@ body {
   margin: auto;
   background-color: var(--calc-back-color);
   padding: 0.61rem;
-  border-radius: 4px;
   border: 1px solid rgb(211, 210, 210);
   background-image: url("images/cubes.png");
   border-radius: 8px;
   border-left: none;
+  transform: scale(1.2);
 }
 
 .display {
