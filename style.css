@@ -41,7 +41,6 @@ body {
   background-image: url("images/cubes.png");
   border-radius: 8px;
   border-left: none;
-  z-index: 1;
 }
 
 .display {
