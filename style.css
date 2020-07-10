@@ -96,6 +96,8 @@ body {
 
 .main {
   position: relative;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .drawer {
@@ -103,15 +105,10 @@ body {
   align-items: center;
   flex-direction: column-reverse;
   transition: transform 200ms ease-in;
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: -1;
 }
 
-.displaying-drawer {
-  transform: translate(-50%, 7.3625rem);
+.undisplaying-drawer {
+  transform: translateY(-92%);
 }
 
 .btn-drawer {

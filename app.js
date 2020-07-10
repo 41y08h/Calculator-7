@@ -95,28 +95,28 @@ document.addEventListener("keydown", function (e) {
 });
 
 // Toggling the drawer
-function displayDrawer() {
+function hideDrawer() {
   var drawer = document.querySelector(".drawer");
 
-  if (!drawer.classList.contains("displaying-drawer")) {
-    drawer.classList.add("displaying-drawer");
+  if (!drawer.classList.contains("undisplaying-drawer")) {
+    drawer.classList.add("undisplaying-drawer");
   }
 }
 
 function toggleDrawer() {
   var drawer = document.querySelector(".drawer");
 
-  if (!drawer.classList.contains("displaying-drawer")) {
-    drawer.classList.add("displaying-drawer");
+  if (!drawer.classList.contains("undisplaying-drawer")) {
+    drawer.classList.add("undisplaying-drawer");
   } else {
-    drawer.classList.remove("displaying-drawer");
+    drawer.classList.remove("undisplaying-drawer");
   }
 }
 
-function hideDrawer() {
+function displayDrawer() {
   var drawer = document.querySelector(".drawer");
 
-  drawer.classList.remove("displaying-drawer");
+  drawer.classList.remove("undisplaying-drawer");
 }
 
 // Eraser
