@@ -17,7 +17,7 @@
 
 body {
   display: flex;
-  align-items: center;
+  padding-top: 5rem;
   justify-content: center;
   background-image: url("images/type.png");
   height: 100vh;
@@ -98,6 +98,7 @@ body {
   position: relative;
   display: flex;
   flex-direction: column-reverse;
+  transform: scale(1.15);
 }
 
 .drawer {
@@ -108,7 +109,7 @@ body {
 }
 
 .undisplaying-drawer {
-  transform: translateY(-92%);
+  transform: translateY(-93%);
 }
 
 .btn-drawer {
