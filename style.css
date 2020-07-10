@@ -95,30 +95,33 @@ body {
 /* Drawer */
 
 .main {
-  display: flex;
-  align-items: center;
-  transform: translateX(-4.2625rem);
+  position: relative;
 }
 
 .drawer {
   display: flex;
   align-items: center;
-  transform: translateX(7.8rem);
+  flex-direction: column-reverse;
   transition: transform 200ms ease-in;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
 }
 
 .displaying-drawer {
-  transform: translateX(0);
+  transform: translateY(7.8rem);
 }
 
 .btn-drawer {
   background-color: white;
-  height: 5rem;
+  width: 5rem;
   display: flex;
   align-items: center;
   padding: 5px;
-  border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   cursor: pointer;
 }
 
@@ -128,8 +131,8 @@ body {
 
   background-color: white;
   background-image: url("images/cubes.png");
-  border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   text-align: center;
   padding: 5px;
 }
